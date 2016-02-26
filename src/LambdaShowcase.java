@@ -44,4 +44,11 @@ public final class LambdaShowcase {
         Collections.sort(heroes, (a, b) -> b.compareTo(a));
     }
 
+    public static void genericShowCase() {
+
+        Converter<String, Integer> converter = (from) -> Integer.valueOf(from);
+        Integer converted = converter.convert("123");
+        System.out.println(converted);    // 123
+    }
+
 }

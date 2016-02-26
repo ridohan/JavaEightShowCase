@@ -17,4 +17,10 @@ public final class DefaultMethodInterfaceShowCase {
         formula.divide(10, 2);
     }
 
+
+    public static void formulaShowcase() {
+        Formula formula = (a,b) -> {return (a+b);};
+        formula.sum(5,10);
+    }
+
 }
